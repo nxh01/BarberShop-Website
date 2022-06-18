@@ -1,0 +1,25 @@
+.word__showcase {
+  padding: 100px 0px;
+  .word-1 {
+    white-space: nowrap;
+    position: relative;
+    right: 0;
+
+    h1 {
+      font-size: $xxl-font-size;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: $main-text-color;
+      -webkit-text-stroke-width: 1.4px;
+    }
+  }
+  .word-2 {
+    white-space: nowrap;
+    position: relative;
+    right: -1000px;
+    bottom: 50px;
+    h1 {
+      font-size: $xxl-font-size;
+      color: $main-text-color;
+    }
+  }
+}

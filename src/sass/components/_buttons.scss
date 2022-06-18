@@ -22,3 +22,12 @@
     -webkit-text-stroke-width: 1px $body-color;
   }
 }
+
+.clicked-btn {
+  background-color: $hover-color !important;
+  color: $main-text-color !important;
+  border: solid 1px $main-text-color !important;
+  .btn-icon {
+    color: $main-text-color !important;
+  }
+}
