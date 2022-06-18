@@ -25,7 +25,7 @@ Still on progress (Unfinished)
 ## Built With
 
 - [HTML]()
-- [Sass]()
+- [Scss]()
 - [Javascript]()
 
 ## Contributing
