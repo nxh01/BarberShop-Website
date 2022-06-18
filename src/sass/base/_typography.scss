@@ -29,6 +29,7 @@ p {
 .under-title {
   font-family: $font-light;
   font-size: $xs-font-size;
+  color: $secondary-text-color;
 }
 
 input::placeholder {
@@ -39,6 +40,7 @@ input::placeholder {
 
 .h2-light {
   font-family: $font-light;
+  font-size: $m-font-size;
 }
 
 .prices {

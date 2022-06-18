@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 202px 20px;
+  .about__container {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 43px;
+    .about__title {
+      color: $main-text-color;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-color: $main-text-color;
+      -webkit-text-stroke-width: 1.4px;
+    }
+    .about__desc {
+      font-family: $font-light !important;
+      font-weight: normal;
+      color: $main-text-color;
+      span {
+        text-decoration: underline 0.2rem solid;
+        text-underline-position: below;
+        text-underline-offset: 0.6rem;
+      }
+    }
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 600px) {
+}

@@ -1,0 +1,58 @@
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 62px 34px;
+  background-color: $secondary-body-color;
+  .service__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 85px;
+    .service__titles {
+      h1 {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-color: $main-text-color;
+        -webkit-text-stroke-width: 1.4px;
+      }
+    }
+  }
+  .service__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    .service__card {
+      display: flex;
+      column-gap: 30px;
+      flex-wrap: wrap;
+      row-gap: 23px;
+      justify-content: center;
+      img {
+        padding-top: 25px;
+      }
+      .service_desc {
+        max-width: 234px;
+        h2 {
+          color: $main-text-color;
+          font-family: $font-light;
+          font-weight: lighter;
+        }
+        p {
+          color: $secondary-text-color;
+        }
+      }
+      .service__price {
+        h1 {
+          font-weight: lighter;
+          color: $main-text-color;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .service__info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+  }
+}

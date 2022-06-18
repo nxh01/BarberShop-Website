@@ -82,6 +82,7 @@ p {
 .under-title {
   font-family: "final-light";
   font-size: 1.25rem;
+  color: #f2f2f2;
 }
 
 input::-moz-placeholder {
@@ -104,6 +105,7 @@ input::placeholder {
 
 .h2-light {
   font-family: "final-light";
+  font-size: 1.875rem;
 }
 
 .prices {
@@ -154,6 +156,36 @@ input::placeholder {
 }
 .scroll-top .scroll-icon {
   color: #0e0e0f;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 202px 20px;
+}
+.about .about__container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 43px;
+}
+.about .about__container .about__title {
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1.4px;
+}
+.about .about__container .about__desc {
+  font-family: "final-light" !important;
+  font-weight: normal;
+  color: #fff;
+}
+.about .about__container .about__desc span {
+  -webkit-text-decoration: underline 0.2rem solid;
+          text-decoration: underline 0.2rem solid;
+  text-underline-position: below;
+  text-underline-offset: 0.6rem;
 }
 
 .home {
@@ -238,6 +270,7 @@ header {
 
 .scroll-header {
   height: 100px !important;
+  background-color: #131314;
 }
 
 .nav__btn {
@@ -378,5 +411,60 @@ header {
   }
   .nav__mobile .nav__collapse:hover {
     color: #d0115f;
+  }
+}
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 62px 34px;
+  background-color: #131314;
+}
+.service .service__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 85px;
+}
+.service .service__wrapper .service__titles h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1.4px;
+}
+.service .service__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+.service .service__container .service__card {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 23px;
+  justify-content: center;
+}
+.service .service__container .service__card img {
+  padding-top: 25px;
+}
+.service .service__container .service__card .service_desc {
+  max-width: 234px;
+}
+.service .service__container .service__card .service_desc h2 {
+  color: #fff;
+  font-family: "final-light";
+  font-weight: lighter;
+}
+.service .service__container .service__card .service_desc p {
+  color: #f2f2f2;
+}
+.service .service__container .service__card .service__price h1 {
+  font-weight: lighter;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .service .service__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
