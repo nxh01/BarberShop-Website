@@ -1,0 +1,50 @@
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  font-family: $font-light;
+  &:hover {
+    color: $hover-color;
+  }
+}
+h1 {
+  font-family: $font-bold;
+  font-size: $xl-font-size;
+}
+
+h2 {
+  font-family: $font-bold;
+  font-size: $m-font-size;
+}
+
+p {
+  font-family: $font-light;
+  font-size: $xs-font-size;
+}
+
+.under-title {
+  font-family: $font-light;
+  font-size: $xs-font-size;
+}
+
+input::placeholder {
+  font-size: $s-font-size;
+  color: $secondary-text-color;
+  font-family: $font-light;
+}
+
+.h2-light {
+  font-family: $font-light;
+}
+
+.prices {
+  font-size: $l-font-size;
+  font-family: $font-light;
+  span {
+    font-size: $m-font-size;
+  }
+}

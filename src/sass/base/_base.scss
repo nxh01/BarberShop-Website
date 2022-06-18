@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.4s all ease-in-out;
+}
+body {
+  background-color: $body-color;
+}
+html {
+  scroll-behavior: smooth;
+}
+.padding {
+  padding: 0px 30px;
+}
+
+/*========== SCROLL BAR ==========*/
+
+@media only screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0rem !important;
+    border-radius: 0.5rem;
+  }
+}
+::-webkit-scrollbar {
+  width: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 0.5rem;
+  transition: 0.9s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+  transition: 0.9s;
+}

@@ -1,0 +1,18 @@
+// Importing Abstracts Style
+@import "./sass/abstracts/variables";
+
+// Importing Base Style
+@import "./sass/base/base";
+@import "./sass/base/typography";
+
+// Importing Components Style
+@import "./sass/components/buttons";
+@import "./sass/components/scrolltop";
+
+// Importing Sections Style
+@import "./sass/sections/about";
+@import "./sass/sections/contact";
+@import "./sass/sections/home";
+@import "./sass/sections/navbar";
+@import "./sass/sections/products";
+@import "./sass/sections/service";

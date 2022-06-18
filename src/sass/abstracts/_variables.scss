@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "final-bold";
+  src: url(/src/assets/fonts/FinalSix\ Bold.ttf);
+}
+@font-face {
+  font-family: "final-light";
+  src: url(/src/assets/fonts/FinalSix\ Light.ttf);
+}
+
+// Colors
+$body-color: #0e0e0f;
+$main-text-color: #fff;
+$secondary-text-color: #f2f2f2;
+$secondary-body-color: #131314;
+$hover-color: #d0115f;
+
+// Font Size
+$xxl-font-size: 7.5rem;
+$xl-font-size: 3.75rem;
+$l-font-size: 2.5rem;
+$m-font-size: 1.875rem;
+$s-font-size: 1.5625rem;
+$xs-font-size: 1.25rem;
+$nav-font-size: 4.375rem;
+
+// Padding
+$desktop-padding: 206px;
+
+// Fonts
+$font-bold: "final-bold";
+$font-light: "final-light";
