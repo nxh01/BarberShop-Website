@@ -19,10 +19,6 @@ You need to clone or download from github, open with vscode(visual studio code) 
 ### Preview
 ![barbershop](https://user-images.githubusercontent.com/80894732/174488798-55934f89-11be-4a9c-b75e-0e721739b8d2.png)
 
-<!-- ![Preview]() -->
-
-Still on progress (Unfinished)
-
 ## Built With
 
 - [HTML]()
