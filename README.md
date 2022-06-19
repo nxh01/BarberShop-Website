@@ -14,9 +14,10 @@ Requirements for the software and other tools to build, test and push
 
 ### Installing
 
-You need to clone or download from github, open with vscode(visual studio code) and the index.html file you need to host it with live server extension on VScode.
+You need to clone or download from github, open with vscode(visual studio code) and the index.html file you need to host it with live server extension on VScode, you also need another extension called "Live Sass Compiler" so you can watch Scss files in your browser.
 
 ### Preview
+![barbershop](https://user-images.githubusercontent.com/80894732/174488798-55934f89-11be-4a9c-b75e-0e721739b8d2.png)
 
 <!-- ![Preview]() -->
 
