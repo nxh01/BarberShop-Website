@@ -33,8 +33,26 @@ window.addEventListener("scroll", function () {
 });
 
 // Shopping Cart
-const navCart = document.querySelector('.nav__cart')
-navCart.addEventListener('click', () => {
+const cartButton = document.querySelector('.nav__cart')
+const cartContainer = document.querySelector('.cart')
+const cartCloser = document.querySelector('.cart-close')
+
+function cartShowDesktop(x) {
+    if (x.matches) { // If media query matches
+        document.body.style.overflow = 'visible'
+    } else {
+    }
+}
+var x = window.matchMedia("(min-width: 900px)")
+cartShowDesktop(x)
+x.addListener(cartShowDesktop)
+
+cartButton.addEventListener('click', () => {
     navbarMenu.classList.remove('show-nav')
-    document.body.style.overflow = ''
+    cartContainer.classList.add('show-cart')
 })
+cartCloser.addEventListener('click', () => {
+    navbarMenu.classList.add('show-nav')
+    cartContainer.classList.remove('show-cart')
+})
+

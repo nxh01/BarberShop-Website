@@ -20,6 +20,50 @@
 </head>
 
 <body>
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__titles">
+                <h1 class="cart__title">Fresh<span>Cuts</span> Cart</h1>
+                <i class="uil uil-times cart-close"></i>
+            </div>
+            <div class="cart__wrapper">
+
+                <div class="cart__product">
+                    <div class="cart__product-img">
+                        <img src="./src/assets/img/products/180pbo.png " alt="">
+                    </div>
+                    <div class="cart__product-info">
+                        <h2>180PBO</h2>
+                        <p>Smooth and soft recovery shampoo, color safe</p>
+                        <div class="cart__product-price">
+                            <p class="prices">29.<span>99</span>$</p>
+                            <button class="remove-from-cart-btn btn">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart__product">
+                    <div class="cart__product-img">
+                        <img src="./src/assets/img/products/tresemme.png " alt="">
+                    </div>
+                    <div class="cart__product-info">
+                        <h2>TRESemme</h2>
+                        <p>STRESemme product moisture for dry, damaged hair </p>
+                        <div class="cart__product-price">
+                            <p class="prices">14.<span>99</span>$</p>
+                            <button class="remove-from-cart-btn btn">Remove From Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart__buttons">
+                <button class="remove-all-btn btn">Remove All Products</button>
+                <button class="checkout-btn btn">Check Out</button>
+            </div>
+        </div>
+
+    </div>
     <header class="header" id="top">
         <div class="nav__mobile">
             <h1 class="nav__title">Barber</h1>
@@ -34,8 +78,8 @@
                     </div>
                 </div>
                 <div class="nav__items">
-                    <a class="nav__links" href="#top">Home</a>
-                    <a class="nav__links" href=#about">About</a>
+                    <a class="nav__links" href="#home">Home</a>
+                    <a class="nav__links" href="#about">About</a>
                     <a class="nav__links" href="#service">Service</a>
                     <a class="nav__links" href="#products">Products</a>
                     <a class="nav__links" href="#contact">Contact</a>
@@ -78,7 +122,7 @@
                 </div>
                 <div class="service__container">
                     <div class="service__card">
-                        <img style="width:80px; height: 135px;" src="./src/assets/img/service icons/scissors.png"
+                        <img style="width:90px; height: 135px;" src="./src/assets/img/service icons/scissors.png"
                             alt="">
                         <div class="service__info">
                             <div class="service_desc">
@@ -102,19 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="service__card">
-                        <img style="width:80px; height: 162px;" src="./src/assets/img/service icons/mustache.png"
-                            alt="">
-                        <div class="service__info">
-                            <div class="service_desc">
-                                <h2 class="h2-light">MUSTACHE</h2>
-                                <p>Cutting and sculpting, mustache outline or trimmed</p>
-                            </div>
-                            <div class="service__price">
-                                <h1 class="prices">9.<span>99</span>$</h1>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="service__card">
                         <img style="width:80px; height: 162px;" src="./src/assets/img/service icons/beard.png" alt="">
                         <div class="service__info">
@@ -124,6 +156,19 @@
                             </div>
                             <div class="service__price">
                                 <h1 class="prices">14.<span>99</span>$</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__card mustache">
+                        <img class="mustache__img" style="width:80px; height: 162px;"
+                            src="./src/assets/img/service icons/mustache.png" alt="">
+                        <div class="service__info">
+                            <div class="service_desc">
+                                <h2 class="h2-light">MUSTACHE</h2>
+                                <p>Cutting and sculpting, mustache outline or trimmed</p>
+                            </div>
+                            <div class="service__price">
+                                <h1 class="prices">9.<span>99</span>$</h1>
                             </div>
                         </div>
                     </div>
@@ -144,8 +189,7 @@
                         </div>
                         <div class="product__info">
                             <h2>TRESemme</h2>
-                            <p>TRESemme product moisture
-                                for dry, damaged hair </p>
+                            <p>TRESemme product moisture for dry, damaged hair </p>
                             <div class="product_price">
                                 <p class="prices">14.<span>99</span>$</p>
                                 <button class="add-to-cart-btn btn">Add To Cart</button>
@@ -173,8 +217,7 @@
                         </div>
                         <div class="product__info">
                             <h2>TRESemme</h2>
-                            <p>Strong hold with touchable
-                                feel, extra hold</p>
+                            <p>Strong hold with touchable feel, extra hold</p>
                             <div class="product_price">
                                 <p class="prices">49.<span>99</span>$</p>
                                 <button class="add-to-cart-btn btn">Add To Cart</button>
@@ -320,6 +363,7 @@
     <!-- Javascript -->
     <script src="./src/js/main.js"></script>
     <script src="./src/js/navbar.js"></script>
+    <script src="./src/js/cart.js"></script>
 </body>
 
 </html>

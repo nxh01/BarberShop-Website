@@ -20,6 +20,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 100px;
+    .mustache {
+      padding-right: 25px;
+    }
     .service__card {
       display: flex;
       column-gap: 30px;
@@ -53,6 +56,21 @@
       display: flex;
       flex-direction: column;
       row-gap: 15px;
+    }
+  }
+}
+
+// Tablet Mode
+@media only screen and (min-width: 600px) {
+  .service__info {
+    display: flex;
+    column-gap: 50px;
+    // flex-direction: row;
+    // row-gap: 15px;
+    .service__price {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
     }
   }
 }

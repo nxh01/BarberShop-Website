@@ -16,7 +16,6 @@ const word2 = document.querySelector('.word-2')
 
 window.onscroll = () => {
     let position = window.scrollY;
-    console.log(position)
     word1.style.right = `${position}px`
     word2.style.left = position - 9000 + "px"
 }
