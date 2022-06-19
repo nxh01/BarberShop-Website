@@ -18,6 +18,11 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 330px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -88,19 +93,31 @@ p {
 
 input::-moz-placeholder {
   font-size: 1.5625rem;
-  color: #f2f2f2;
   font-family: "final-light";
 }
 
 input:-ms-input-placeholder {
   font-size: 1.5625rem;
-  color: #f2f2f2;
   font-family: "final-light";
 }
 
 input::placeholder {
   font-size: 1.5625rem;
-  color: #f2f2f2;
+  font-family: "final-light";
+}
+
+textarea::-moz-placeholder {
+  font-size: 1.5625rem;
+  font-family: "final-light";
+}
+
+textarea:-ms-input-placeholder {
+  font-size: 1.5625rem;
+  font-family: "final-light";
+}
+
+textarea::placeholder {
+  font-size: 1.5625rem;
   font-family: "final-light";
 }
 
@@ -168,6 +185,98 @@ input::placeholder {
   color: #0e0e0f;
 }
 
+footer {
+  background-color: #131314;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 70px;
+}
+@media only screen and (min-width: 1425px) {
+  footer {
+    padding: 60px 171px;
+  }
+}
+footer .footer__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+footer .footer__container h1 {
+  font-size: 3.75rem;
+  color: #fff;
+}
+@media only screen and (max-width: 320px) {
+  footer .footer__container h1 {
+    font-size: 3.125rem;
+  }
+}
+footer .footer__container h1 span {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1.4px;
+}
+footer .footer__container .footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 100px;
+       column-gap: 100px;
+}
+@media only screen and (max-width: 760px) {
+  footer .footer__container .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 100px;
+  }
+}
+@media only screen and (max-width: 465px) {
+  footer .footer__container .footer__content {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 100px;
+  }
+  footer .footer__container .footer__content .footer__card {
+    max-width: 236px;
+  }
+}
+footer .footer__container .footer__content .footer__card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+footer .footer__container .footer__content .footer__card h1 {
+  font-size: 1.875rem;
+  color: #fff;
+}
+footer .footer__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+footer .footer__info h2 {
+  font-size: 1.25rem;
+  font-family: "final-bold";
+  color: #fff;
+}
+footer .footer__info p {
+  font-size: 1.25rem;
+  color: #f2f2f2;
+  font-family: "final-light";
+  font-weight: lighter;
+}
+footer .footer__info p span {
+  font-family: "final-bold";
+}
+footer .footer__icons {
+  font-size: 1.25rem;
+  color: #fff;
+}
+footer .footer__icons:hover {
+  color: #d0115f;
+}
+
 .about {
   display: flex;
   justify-content: center;
@@ -191,11 +300,80 @@ input::placeholder {
   font-weight: normal;
   color: #fff;
 }
+@media only screen and (max-width: 330px) {
+  .about .about__container .about__desc {
+    font-size: 3.125rem !important;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .about .about__container .about__desc {
+    font-size: 2.8125rem !important;
+  }
+}
 .about .about__container .about__desc span {
   -webkit-text-decoration: underline 0.2rem solid;
           text-decoration: underline 0.2rem solid;
   text-underline-position: below;
   text-underline-offset: 0.6rem;
+}
+
+.contact {
+  display: flex;
+  padding: 130px 16px;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact__container {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.contact .contact__container .contact__titles h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 1.4px;
+}
+.contact .contact__container .contact__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: center;
+}
+.contact .contact__container .contact__inputs .input {
+  width: 100%;
+  height: 85px;
+  padding: 0px 8px;
+  text-align: left;
+  background-color: transparent;
+  border: solid 1px #fff;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1.25rem;
+  color: #fff;
+  font-family: "final-light";
+  font-weight: normal;
+}
+.contact .contact__container .contact__inputs .input::-moz-placeholder {
+  font-size: 1.25rem;
+  color: #ccc;
+}
+.contact .contact__container .contact__inputs .input:-ms-input-placeholder {
+  font-size: 1.25rem;
+  color: #ccc;
+}
+.contact .contact__container .contact__inputs .input::placeholder {
+  font-size: 1.25rem;
+  color: #ccc;
+}
+.contact .contact__container .contact__inputs .input:focus {
+  border: solid 2px rgb(34, 34, 34);
+}
+.contact .contact__container .contact__inputs .message {
+  padding: 10px 8px;
+  resize: vertical;
+  min-height: 300px;
+  max-height: 400px;
 }
 
 .home {
@@ -227,6 +405,11 @@ input::placeholder {
 }
 .home .home__container .home__info h1 {
   color: #fff;
+}
+@media only screen and (max-width: 330px) {
+  .home .home__container .home__info h1 {
+    font-size: 3.125rem !important;
+  }
 }
 .home .home__container .home__info h1 span {
   -webkit-text-fill-color: transparent;
@@ -313,8 +496,6 @@ header {
   justify-content: left;
   align-items: center;
   padding: 0px 10px;
-  position: relative;
-  bottom: 100px;
 }
 .nav__buttons .nav__cart {
   font-size: 2.5rem;
@@ -353,19 +534,23 @@ header {
     justify-content: space-around;
     background-color: #131314;
     top: -500vh;
-    padding: 30px 0px;
+    padding-top: 10px;
+    overflow-x: scroll;
+  }
+  .navbar ::-webkit-scrollbar {
+    width: 0.3rem !important;
+    border-radius: 0.5rem;
   }
   .navbar .nav__list {
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 10px;
   }
   .navbar .nav__items {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
-    height: 100%;
+    row-gap: 0;
     padding: 0px 10px;
   }
   .navbar .nav__items .nav__links {
@@ -375,7 +560,13 @@ header {
     color: #fff;
     font-size: 4.375rem;
   }
-
+}
+@media only screen and (max-width: 600px) and (max-width: 280px) {
+  .navbar .nav__items .nav__links {
+    font-size: 3.125rem !important;
+  }
+}
+@media only screen and (max-width: 600px) {
   .nav__mobile-list {
     display: flex;
     justify-content: space-between;
@@ -407,7 +598,8 @@ header {
     color: #d0115f;
     -webkit-text-fill-color: #d0115f;
   }
-
+}
+@media only screen and (max-width: 600px) {
   .nav__mobile {
     width: 100%;
     display: flex;
@@ -428,6 +620,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 104px 16px;
+  padding-bottom: 130px;
 }
 .products .products__wrapper {
   display: flex;
@@ -438,6 +631,11 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 1.4px;
+}
+@media only screen and (max-width: 330px) {
+  .products .products__wrapper .products__titles h1 {
+    font-size: 3.125rem !important;
+  }
 }
 .products .products__wrapper .products__container {
   display: flex;
@@ -455,6 +653,11 @@ header {
   border-radius: 5px;
   padding: 5px 12px;
   padding-bottom: 10px;
+}
+@media only screen and (max-width: 273px) {
+  .products .products__wrapper .products__container .product__card {
+    padding: 5px 2px;
+  }
 }
 @media only screen and (min-width: 515px) {
   .products .products__wrapper .products__container .product__card {
@@ -493,11 +696,6 @@ header {
   flex-direction: column;
   row-gap: 10px;
   height: 100%;
-}
-@media only screen and (max-width: 280px) {
-  .products .products__wrapper .products__container .product__info {
-    padding: 0 10px;
-  }
 }
 .products .products__wrapper .products__container .product__info h2 {
   color: #fff;
@@ -577,7 +775,8 @@ header {
 }
 
 .word__showcase {
-  padding: 100px 0px;
+  padding: 0px 0px;
+  overflow-x: hidden;
 }
 .word__showcase .word-1 {
   white-space: nowrap;
@@ -585,7 +784,7 @@ header {
   right: 0;
 }
 .word__showcase .word-1 h1 {
-  font-size: 7.5rem;
+  font-size: 6.25rem;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 1.4px;
@@ -597,6 +796,6 @@ header {
   bottom: 50px;
 }
 .word__showcase .word-2 h1 {
-  font-size: 7.5rem;
+  font-size: 6.25rem;
   color: #fff;
 }/*# sourceMappingURL=style.css.map */

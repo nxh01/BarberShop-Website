@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 104px 16px;
+  padding-bottom: 130px;
   .products__wrapper {
     display: flex;
     flex-direction: column;
@@ -10,6 +11,9 @@
 
     .products__titles {
       h1 {
+        @media only screen and(max-width:330px) {
+          font-size: 3.125rem !important;
+        }
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-color: $main-text-color;
         -webkit-text-stroke-width: 1.4px;
@@ -31,6 +35,9 @@
         border-radius: 5px;
         padding: 5px 12px;
         padding-bottom: 10px;
+        @media only screen and (max-width: 273px) {
+          padding: 5px 2px;
+        }
         @media only screen and (min-width: 515px) {
           min-height: 594px;
           min-width: 500px;
@@ -72,9 +79,6 @@
         flex-direction: column;
         row-gap: 10px;
         height: 100%;
-        @media only screen and (max-width: 280px) {
-          padding: 0 10px;
-        }
 
         h2 {
           color: $main-text-color;
